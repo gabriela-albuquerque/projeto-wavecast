@@ -1,4 +1,13 @@
 @media only screen and (max-width: 1023px) {
+    body {
+        grid-template-areas:
+        "header"
+        "main"
+        "section";
+        grid-template-columns: 1fr;
+        padding-bottom: 4rem;
+    }
+    
     .menu-lateral,
     .rodape,
     .cabecalho__botao,
@@ -40,6 +49,25 @@
         padding: 0;
     }
 
+    .secao-vertical .cartao__subtitulo {
+        font-size: 12px;
+    }
+
+    .secao-player {
+        display: none;
+    }
+
+    .secao-player__mobile {
+        grid-area: section;
+        padding: 1rem;
+    }
+
+    .player__mobile__superior {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1399px) {
@@ -58,7 +86,7 @@
         width: 208px;
     }
 
-    .navbar {
+    .navbar, .secao-player__mobile {
         display: none;
     }
 
@@ -84,7 +112,7 @@
 @media only screen and (min-width: 1400px) {
 
     .navbar,
-    .cabecalho__logo {
+    .cabecalho__logo, .secao-player__mobile {
         display: none;
     }
 

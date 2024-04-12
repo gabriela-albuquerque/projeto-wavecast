@@ -36,3 +36,7 @@
 .secao-vertical .secao__cartoes .cartao__titulo {
     flex-grow: 1;
 }
+
+.cartao__titulo {
+    word-wrap: break-word;
+}
